@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="http://192.168.1.78:5500/exerciciosLivroWEB/ex02-pg45/index.html" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Autenticação</legend>
+            <label>Email: <br><input type="email" id="myEmail" name="email"></label><br>
+            <label>Password: <br><input type="password" id="myPassword" name="password" pattern="(?=.*\d) (?=.*[a-z]) (?=.*[A-Z]).{8,}" title="Deve conter pelo menos, um número, uma letra maiúscula e uma minúscula e pelo menos oito ou mais carateres."></label><br>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Login">
+        </fieldset>
+    </form>
+</body>
+</html>
